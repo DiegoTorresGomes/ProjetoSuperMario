@@ -48,6 +48,17 @@
     
 }
 
+#play{
+    position: relative;
+    left: 50%;
+    top: 50px;
+    background-color: gray;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+    
+}
+
 @keyframes pipe-animation {
     from {
         right: -78px;

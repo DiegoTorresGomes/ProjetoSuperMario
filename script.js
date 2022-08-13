@@ -1,7 +1,12 @@
 const mario = document.querySelector('.mario');
 const pipe = document.querySelector('.pipe');
 const clouds = document.querySelector('.clouds');
-const gameOver = document.querySelector('.gameOver')
+const gameOver = document.querySelector('.gameOver');
+const botao = document.getElementById('play');
+
+botao.addEventListener("click", () => {
+    location.reload()
+});
 
 
 const jump = () => {
