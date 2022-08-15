@@ -39,32 +39,25 @@
 
 .floor1{
     position: absolute;
-    width: 1000px;
+    width: 100%;
     animation: floor-animation-1 1.5s infinite linear;
 }
 
 @keyframes floor-animation-1 {
-    0%{
-        right:-1px;
+    from {
+        right: 0%;
     }
-    100%{
-        right: 0%;    
+
+    to {
+        right: 20%;
     }
+
 }
 
 .floor2{
-    position: relative;
-    width: 1000px;
-    animation: floor-animation-2 1.5s infinite linear;
-}
-
-@keyframes floor-animation-2 {
-    0%{
-        right:-1px;
-    }
-    100%{
-        right: 0%;    
-    }
+    width: 100%;
+    
+    
 }
 
 
