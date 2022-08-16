@@ -6,6 +6,7 @@ const botao = document.getElementById('play');
 const floorA = document.querySelector('.floor-1');
 const floorB = document.querySelector('.floor-2');
 const floorC = document.querySelector('.floor-3');
+
 botao.addEventListener("click", () => {
     location.reload()
 });
@@ -26,7 +27,8 @@ const loop = setInterval(() => {
    const pipePosition = pipe.offsetLeft;
    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
    const cloudsPosition = +window.getComputedStyle(clouds).left.replace('px', '');
-   const floorPosition = +window.getComputedStyle(floorA, floorB, floorC).left.replace('px', '');
+   const floorPosition = +window.getComputedStyle(floorA).left.replace('px', '');
+   const floorPositionB = +window.getComputedStyle(floorB, floorC).left.replace('px', '');
 
 
    console.log(marioPosition)
@@ -46,10 +48,10 @@ const loop = setInterval(() => {
     floorA.style.left = `${floorPosition}px`;
 
     floorB.style.animation = 'none';
-    floorB.style.left = `${floorPosition}px`;
+    floorB.style.left = `${floorPositionB}px`;
    
     floorC.style.animation = 'none'; 
-    floorC.style.left = `${floorPosition}px`;
+    floorC.style.left = `${floorPositionB}px`;
 
     
    
