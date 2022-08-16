@@ -37,29 +37,59 @@
     animation: clouds-animation 20s infinite linear;
 }
 
-.floor1{
-    position: absolute;
+
+.floor {
     width: 100%;
-    animation: floor-animation-1 1.5s infinite linear;
+    position: absolute;
+    
+}
+
+.floor-1{
+    position: absolute;
+    z-index: 1;
+    animation: floor-animation-1 1.8s infinite linear;
 }
 
 @keyframes floor-animation-1 {
-    from {
+    0%{
         right: 0%;
     }
-
-    to {
-        right: 20%;
+    100%{
+        right: 100%;    
     }
-
 }
 
-.floor2{
-    width: 100%;
-    
-    
+.floor-2{
+    position: absolute; 
+    right: -80%;
+    z-index: 10;
+    animation: floor-animation-2 10.2s infinite linear;
 }
 
+@keyframes floor-animation-2 {
+    0%{
+        right: 50%;
+    }
+    100%{
+        right: 100%;    
+    }
+}
+
+.floor-3{
+    position: absolute;  
+    right: -100%;
+    z-index: 10;
+    animation: floor-animation-3 12.1s infinite linear;
+}
+
+@keyframes floor-animation-3 {
+    0%{
+        right: 10%;
+    }
+    100%{
+        right: 100%;    
+    }
+}
 
 
 .gameOver{
